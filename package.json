@@ -1,9 +1,9 @@
 {
   "name": "brain-games-abrekov",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "description": "Hexlet project",
   "keywords": [
-    "keyword"	
+    "keyword"
   ],
   "files": [
     "dist"
@@ -29,6 +29,7 @@
     "@babel/preset-env": "^7.3.4"
   },
   "dependencies": {
+    "brain-games-abrekov": "^1.0.2",
     "readline-sync": "^1.4.9"
   }
 }
