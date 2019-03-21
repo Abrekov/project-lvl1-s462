@@ -9,22 +9,28 @@ export const sayHello = () => {
   return name;
 };
 
+// eslint-disable-next-line max-len
+const getRandomNumber = (min, max) => Math.floor(Math.random() * (Math.floor(max) - Math.ceil(min))) + Math.ceil(min);
+
+const checkEven = number => number % 2 === 0;
+
 export const isEven = () => {
   sayWelcome();
   console.log('Answer "yes" if number even otherwise answer "no"');
   const name = sayHello();
 
-  let num = 0;
-  let answer = '';
-  let correctAnswer = '';
+  const numOfQuestion = 3;
+  let wins = 0;
+  for (let i = 0; i < numOfQuestion; i += 1) {
+    const question = getRandomNumber(1, 100);
+    console.log(`Question: ${question}`);
 
-  for (let i = 0; i < 3; i += 1) {
-    num = Math.floor(Math.random() * Math.floor(100));
-    console.log(`Question: ${num}`);
-    answer = readlineSync.question('Your answer: ');
-    correctAnswer = num % 2 === 0 ? 'yes' : 'no';
+    const answer = readlineSync.question('Your answer: ');
+    const correctAnswer = checkEven(question) ? 'yes' : 'no';
+
     if (answer === correctAnswer) {
       console.log('Correct!');
+      wins += 1;
     } else {
       console.log(`${answer} is wrong answer ;(. Correct answer was ${correctAnswer}`);
       console.log(`Let's try again, ${name}`);
@@ -32,7 +38,7 @@ export const isEven = () => {
     }
   }
 
-  if (answer === correctAnswer) {
+  if (wins === 3) {
     console.log(`Congratulations, ${name}!`);
   }
 };
