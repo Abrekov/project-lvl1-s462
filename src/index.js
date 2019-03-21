@@ -44,6 +44,7 @@ export const isEven = () => {
 };
 
 let correctAnswer = 0;
+// eslint-disable-next-line consistent-return
 const getRandomExpression = () => {
   const operand1 = getRandomInteger(1, 11);
   const operand2 = getRandomInteger(1, 11);
