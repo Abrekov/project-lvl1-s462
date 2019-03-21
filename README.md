@@ -6,4 +6,4 @@ Hexlet project "Brain Games"
 
 [![Build Status](https://travis-ci.org/Abrekov/project-lvl1-s462.svg?branch=master)](https://travis-ci.org/Abrekov/project-lvl1-s462)
 
-<script id="asciicast-qaGyxjPFb7oSTdJ37T9pVBLDF" src="https://asciinema.org/a/qaGyxjPFb7oSTdJ37T9pVBLDF.js" async></script>
+<a href="https://asciinema.org/a/qaGyxjPFb7oSTdJ37T9pVBLDF" target="_blank"><img src="https://asciinema.org/a/qaGyxjPFb7oSTdJ37T9pVBLDF.svg" /></a>
