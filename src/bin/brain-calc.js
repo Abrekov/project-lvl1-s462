@@ -1,5 +1,5 @@
 #!/usr/bin/env node
 
-import calculator from '../games/brain-calc';
+import calc from '../games/brain-calc';
 
-calculator();
+calc();

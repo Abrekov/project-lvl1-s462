@@ -1,46 +1,24 @@
 import readlineSync from 'readline-sync';
-import getRandomInteger from './generator';
 
-export const sayWelcome = () => {
+export default (gameDescription, question, correctAnswer) => {
   console.log('Welcome to the Brain Games!');
-};
-export const sayHello = () => {
+  console.log(gameDescription);
   const name = readlineSync.question('May I have your name? ');
   console.log(`Hello, ${name}!`);
-  return name;
-};
 
-export const getAnswer = () => readlineSync.question('Your answer: ');
-
-export const isNumEven = num => num % 2 === 0;
-
-let operand1 = 0;
-let operand2 = 0;
-let operator = 0;
-
-const generateExpression = () => {
-  operand1 = getRandomInteger(1, 11);
-  operand2 = getRandomInteger(1, 11);
-  operator = getRandomInteger(1, 4);
-};
-
-export const getRandomExpression = () => {
-  generateExpression();
-  if (operator === 1) {
-    return `${operand1} + ${operand2}`;
+  const round = 3;
+  for (let i = 0; i < round; i += 1) {
+    const data = question();
+    console.log(`Question: ${data}`);
+    const answer = readlineSync.question('Your answer: ');
+    const rightAnswer = String(correctAnswer(data));
+    if (answer === rightAnswer) {
+      console.log('Correct!');
+    } else {
+      console.log(`${answer} is wrong answer ;(. Correct answer was ${rightAnswer}`);
+      console.log(`Let's try again, ${name}`);
+      return;
+    }
   }
-  if (operator === 2) {
-    return `${operand1} - ${operand2}`;
-  }
-  return `${operand1} * ${operand2}`;
-};
-
-export const getResultOfExpression = () => {
-  if (operator === 1) {
-    return operand1 + operand2;
-  }
-  if (operator === 2) {
-    return operand1 - operand2;
-  }
-  return operand1 * operand2;
+  console.log(`Congratulations, ${name}!`);
 };
