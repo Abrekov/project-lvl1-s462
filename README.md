@@ -21,3 +21,7 @@ Game: "GCD"
 Game: "Arithmetic Progression"
 
 <a href="https://asciinema.org/a/4NNMPwjEiTN7o24EXQLCspZyo" target="_blank"><img src="https://asciinema.org/a/4NNMPwjEiTN7o24EXQLCspZyo.svg" /></a>
+
+Game: "Is it a simple number?"
+
+<a href="https://asciinema.org/a/mIMxQVSn1kNh5usInAP85Y07Z" target="_blank"><img src="https://asciinema.org/a/mIMxQVSn1kNh5usInAP85Y07Z.svg" /></a>
