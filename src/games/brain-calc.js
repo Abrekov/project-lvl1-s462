@@ -2,11 +2,11 @@ import calc from '..';
 import getRandomInteger from '../generator';
 
 const gameDescription = 'What is the result of the expression?';
-
-const operatorsAndFunctions = new Map();
-operatorsAndFunctions.set('+', (a, b) => a + b);
-operatorsAndFunctions.set('-', (a, b) => a - b);
-operatorsAndFunctions.set('*', (a, b) => a * b);
+const rounds = 3;
+const operations = new Map();
+operations.set('+', (a, b) => a + b);
+operations.set('-', (a, b) => a - b);
+operations.set('*', (a, b) => a * b);
 
 const operators = ['+', '-', '*'];
 
@@ -15,8 +15,8 @@ const questionAndAnswer = () => {
   const b = getRandomInteger(0, 10);
   const operator = operators[getRandomInteger(0, operators.length)];
   const question = `${a} ${operator} ${b}`;
-  const correctAnswer = String(operatorsAndFunctions.get(operator)(a, b));
+  const correctAnswer = String(operations.get(operator)(a, b));
   return [question, correctAnswer];
 };
 
-export default () => calc(gameDescription, questionAndAnswer);
+export default () => calc(gameDescription, questionAndAnswer, rounds);

@@ -1,6 +1,7 @@
 import even from '..';
 import getRandomInteger from '../generator';
 
+const rounds = 3;
 const gameDescription = 'Answer "yes" if number even otherwise answer "no"';
 const isEven = num => num % 2 === 0;
 const questionAndAnswer = () => {
@@ -9,4 +10,4 @@ const questionAndAnswer = () => {
   return [question, correctAnswer];
 };
 
-export default () => even(gameDescription, questionAndAnswer);
+export default () => even(gameDescription, questionAndAnswer, rounds);
