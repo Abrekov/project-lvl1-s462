@@ -17,3 +17,7 @@ Game: "Calculator"
 Game: "GCD"
 
 <a href="https://asciinema.org/a/rua7nrMQ2pkLuXHDdYvv8pYXI" target="_blank"><img src="https://asciinema.org/a/rua7nrMQ2pkLuXHDdYvv8pYXI.svg" /></a>
+
+Game: "Arithmetic Progression"
+
+<a href="https://asciinema.org/a/4NNMPwjEiTN7o24EXQLCspZyo" target="_blank"><img src="https://asciinema.org/a/4NNMPwjEiTN7o24EXQLCspZyo.svg" /></a>
