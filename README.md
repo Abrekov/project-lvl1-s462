@@ -6,6 +6,14 @@ Hexlet project "Brain Games"
 
 [![Build Status](https://travis-ci.org/Abrekov/project-lvl1-s462.svg?branch=master)](https://travis-ci.org/Abrekov/project-lvl1-s462)
 
+Game: "Check for even"
+
 <a href="https://asciinema.org/a/qaGyxjPFb7oSTdJ37T9pVBLDF" target="_blank"><img src="https://asciinema.org/a/qaGyxjPFb7oSTdJ37T9pVBLDF.svg" /></a>
 
+Game: "Calculator"
+
 <a href="https://asciinema.org/a/LQ7ScOD19VfY7PpEwf07hu7FF" target="_blank"><img src="https://asciinema.org/a/LQ7ScOD19VfY7PpEwf07hu7FF.svg" /></a>
+
+Game: "GCD"
+
+<a href="https://asciinema.org/a/rua7nrMQ2pkLuXHDdYvv8pYXI" target="_blank"><img src="https://asciinema.org/a/rua7nrMQ2pkLuXHDdYvv8pYXI.svg" /></a>

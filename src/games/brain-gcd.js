@@ -2,9 +2,8 @@ import gcd from '..';
 import getRandomInteger from '../generator';
 
 const gameDescription = 'Find the greatest common divisor of given numbers.';
-const number1 = getRandomInteger(1, 100);
-const number2 = getRandomInteger(1, 100);
-const grstCommonDivisor = () => {
+
+const grstCommonDivisor = (number1, number2) => {
   const maxDivisor = number1 <= number2 ? number1 : number2;
   if (number1 % maxDivisor === 0 && number2 % maxDivisor === 0) {
     return String(maxDivisor);
@@ -20,8 +19,10 @@ const grstCommonDivisor = () => {
 };
 
 const questionAndAnswer = () => {
+  const number1 = getRandomInteger(1, 100);
+  const number2 = getRandomInteger(1, 100);
   const question = `${number1} ${number2}`;
-  const correctAnswer = grstCommonDivisor();
+  const correctAnswer = grstCommonDivisor(number1, number2);
 
   return [question, correctAnswer];
 };
