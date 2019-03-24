@@ -1,7 +1,7 @@
 import gcd from '..';
 import getRandomInteger from '../generator';
 
-const rounds = 3;
+
 const gameDescription = 'Find the greatest common divisor of given numbers.';
 
 const getGreatestCommonDivisor = (a, b) => {
@@ -11,7 +11,7 @@ const getGreatestCommonDivisor = (a, b) => {
   return getGreatestCommonDivisor(b, a % b);
 };
 
-const questionAndAnswer = () => {
+const getQuestionAndAnswer = () => {
   const number1 = getRandomInteger(1, 100);
   const number2 = getRandomInteger(1, 100);
   const question = `${number1} ${number2}`;
@@ -20,4 +20,4 @@ const questionAndAnswer = () => {
   return [question, correctAnswer];
 };
 
-export default () => gcd(gameDescription, questionAndAnswer, rounds);
+export default () => gcd(gameDescription, getQuestionAndAnswer);

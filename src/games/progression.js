@@ -1,15 +1,14 @@
 import progression from '..';
 import getRandomInteger from '../generator';
 
-const rounds = 3;
+
 const gameDescription = 'What number is missing in the progression?';
 
-const getQuestion = (a, b, c) => {
+const getQuestion = (beginOfSequence, length, step, correctAnswer) => {
   let str = '';
-  let count = 0;
-  for (let i = a; i < b; i += 2) {
-    count += 1;
-    if (count === c) {
+  const endOfSequence = beginOfSequence + length * step;
+  for (let i = beginOfSequence; i < endOfSequence; i += step) {
+    if (i === correctAnswer) {
       str = `${str} ..`;
     } else {
       str = `${str} ${i}`;
@@ -18,13 +17,13 @@ const getQuestion = (a, b, c) => {
   return str;
 };
 
-const questionAndAnswer = () => {
-  const beginOfProgression = getRandomInteger(0, 100);
-  const endOfProgression = beginOfProgression + 20;
-  const randomInteger = getRandomInteger(1, 11);
-  const correctAnswer = String(randomInteger * 2 + beginOfProgression - 2);
-  const question = getQuestion(beginOfProgression, endOfProgression, randomInteger);
-  return [question, correctAnswer];
+const getQuestionAndAnswer = () => {
+  const beginOfSequence = getRandomInteger(0, 100);
+  const step = 2;
+  const length = 10;
+  const correctAnswer = getRandomInteger(0, length) * step + beginOfSequence;
+  const question = getQuestion(beginOfSequence, length, step, correctAnswer);
+  return [question, String(correctAnswer)];
 };
 
-export default () => progression(gameDescription, questionAndAnswer, rounds);
+export default () => progression(gameDescription, getQuestionAndAnswer);
