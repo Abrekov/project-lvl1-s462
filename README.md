@@ -9,6 +9,7 @@ Brain games is a set of mini-games launched from the console. These games are si
 Game: "Check for even"
 
 <a href="https://asciinema.org/a/qaGyxjPFb7oSTdJ37T9pVBLDF" target="_blank"><img src="https://asciinema.org/a/qaGyxjPFb7oSTdJ37T9pVBLDF.svg" /></a>
+<script id="asciicast-qaGyxjPFb7oSTdJ37T9pVBLDF" src="https://asciinema.org/a/qaGyxjPFb7oSTdJ37T9pVBLDF.js" async></script>
 
 Game: "Calculator"
 
