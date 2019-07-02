@@ -1,6 +1,6 @@
 # Hexlet project "Brain Games"
 
-Brain games is a set of mini-games launched from the console. These games are similar to what is commonly called "Brain Games".
+Brain games is a set of mini-games launched from the console. These games are similar to what is commonly called "Brain Games". The purpose of the project is acquaintance with the JavaScript ecosystem.
 
 <a href="https://codeclimate.com/github/Abrekov/project-lvl1-s462/maintainability"><img src="https://api.codeclimate.com/v1/badges/7e979d45960555010423/maintainability" /></a>
 
